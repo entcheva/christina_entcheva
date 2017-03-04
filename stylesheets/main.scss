@@ -21,8 +21,8 @@ body {
   max-height: 260px;
 }
 
-.work {
-  background: $blue;
+.projects {
+  background: $ltgray;
 }
 
 
@@ -32,7 +32,8 @@ h3 {
 
 
 .project {
-  background: $ltgray;
+  background: $blue;
+  border: 10px solid orange;
 }
 
 .project-pic {
@@ -47,10 +48,15 @@ h3 {
   background: $ltgray;
 }
 
-#blog {
-  background: $blue;
+.skill-icon {
+  max-height: 56px;
+  max-width: 56px;
 }
 
-#conteact {
+#blog {
+  background: $ltgray;
+}
+
+#contact {
   background: $ltgray;
 }
