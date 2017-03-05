@@ -1,5 +1,10 @@
 @import 'bourbon/bourbon';
-@import 'neat';
+@import 'neat/neat';
+
+$neat-grid: (
+  columns: 12,
+  gutter: 20px,
+);
 
 $blue:#2e7b9e;
 $ltgray: #efefef;
@@ -12,6 +17,10 @@ body {
 
 #splash {
   background: url('../images/splash.jpg');
+}
+
+#splash-info {
+  @include grid-column(6);
 }
 
 #bio {
@@ -30,7 +39,7 @@ body {
 
 
 h3 {
-  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', $helvetica;
 }
 
 
