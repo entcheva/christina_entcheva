@@ -1,0 +1,91 @@
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+// @import 'main.scss';
+
+$neat-grid: (
+  columns: 12,
+  gutter: 20px,
+);
+
+$blue:#2e7b9e;
+$ltgray: #efefef;
+
+body {
+  margin: 0;
+  background: $blue;
+}
+
+
+#splash {
+  background: url('../images/splash.jpg');
+  // @include outer-container;
+  @include grid-column(12);
+  height: 100vh;
+}
+
+#splash-info {
+  // @include grid-column(6);
+  background-color: red;
+  text-align: center;
+  // @include position(relative, 0 auto auto 0);
+  // margin: 0 auto 0 auto;
+  // padding: 500 0 0 0;
+  // @include shift(-3);
+}
+
+#bio {
+  background: $ltgray;
+  @include grid-column(12);
+}
+
+#bio-pic {
+  border-radius: 50%;
+  max-width: 260px;
+  max-height: 260px;
+  @include grid-column(2);
+}
+
+.projects {
+  background: $ltgray;
+  @include grid-column(12);
+}
+
+
+h3 {
+  font-family: 'Roboto', $helvetica;
+}
+
+
+.project {
+  background: $blue;
+  border: 1px solid black;
+  @include grid-column(4);
+}
+
+.project-pic {
+  max-width: 400px;
+}
+
+.project-blurb {
+  font-family: Times, serif;
+}
+
+#skills {
+  background: $ltgray;
+  @include grid-column(12);
+}
+
+.skill-icon {
+  max-height: 56px;
+  max-width: 56px;
+}
+
+#blog {
+  background: $ltgray;
+  @include grid-column(12);
+}
+
+#contact {
+  background: $ltgray;
+  @include grid-column(12);
+}

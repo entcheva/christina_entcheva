@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  background: #2e7b9e; }
+
+#splash {
+  background: url("../images/splash.jpg");
+  width: calc(100% - 40px);
+  float: left;
+  margin-left: 20px;
+  height: 100vh; }
+
+#splash-info {
+  background-color: red;
+  text-align: center; }
+
+#bio {
+  background: #efefef;
+  width: calc(100% - 40px);
+  float: left;
+  margin-left: 20px; }
+
+#bio-pic {
+  border-radius: 50%;
+  max-width: 260px;
+  max-height: 260px;
+  width: calc(16.66667% - 23.33333px);
+  float: left;
+  margin-left: 20px; }
+
+.projects {
+  background: #efefef;
+  width: calc(100% - 40px);
+  float: left;
+  margin-left: 20px; }
+
+h3 {
+  font-family: "Roboto", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
+
+.project {
+  background: #2e7b9e;
+  border: 1px solid black;
+  width: calc(33.33333% - 26.66667px);
+  float: left;
+  margin-left: 20px; }
+
+.project-pic {
+  max-width: 400px; }
+
+.project-blurb {
+  font-family: Times, serif; }
+
+#skills {
+  background: #efefef;
+  width: calc(100% - 40px);
+  float: left;
+  margin-left: 20px; }
+
+.skill-icon {
+  max-height: 56px;
+  max-width: 56px; }
+
+#blog {
+  background: #efefef;
+  width: calc(100% - 40px);
+  float: left;
+  margin-left: 20px; }
+
+#contact {
+  background: #efefef;
+  width: calc(100% - 40px);
+  float: left;
+  margin-left: 20px; }
+
+/*# sourceMappingURL=application.css.map */

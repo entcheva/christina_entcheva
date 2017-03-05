@@ -1,74 +1,37 @@
+@charset 'UTF-8';
 @import 'bourbon/bourbon';
 @import 'neat/neat';
 
-$neat-grid: (
-  columns: 12,
-  gutter: 20px,
-);
+// 1. Configuration and helpers
+@import
+  'abstracts/variables',
+  'abstracts/functions',
+  'abstracts/mixins';
 
-$blue:#2e7b9e;
-$ltgray: #efefef;
+// 2. Vendors
+@import
+  'vendor/normalize';
 
-body {
-  margin: 0;
-  background: $blue;
-}
+// 3. Base stuff
+@import
+  'base/base',
+  'base/fonts',
+  'base/typography',
+  'base/helpers';
 
+// 4. Layout-related sections
+@import
+  'layout/header',
+  'layout/footer';
 
-#splash {
-  background: url('../images/splash.jpg');
-}
+// 5. Components
+@import
+  'components/button';
 
-#splash-info {
-  @include grid-column(6);
-}
+// 6. Page-specific styles
+@import
+  'pages/home';
 
-#bio {
-  background: $ltgray;
-}
-
-#bio-pic {
-  border-radius: 50%;
-  max-width: 260px;
-  max-height: 260px;
-}
-
-.projects {
-  background: $ltgray;
-}
-
-
-h3 {
-  font-family: 'Roboto', $helvetica;
-}
-
-
-.project {
-  background: $blue;
-  border: 10px solid orange;
-}
-
-.project-pic {
-  max-width: 400px;
-}
-
-.project-blurb {
-  font-family: Times, serif;
-}
-
-#skills {
-  background: $ltgray;
-}
-
-.skill-icon {
-  max-height: 56px;
-  max-width: 56px;
-}
-
-#blog {
-  background: $ltgray;
-}
-
-#contact {
-  background: $ltgray;
-}
+// 7. Themes
+@import
+  'themes/default';
