@@ -1,3 +1,7 @@
+$visual-grid: true;
+$visual-grid-color: blue;
+$visual-grid-opacity: .5;
+
 @import 'bourbon/bourbon';
 @import 'neat/neat';
 // @import 'main.scss';
@@ -12,7 +16,7 @@ $ltgray: #efefef;
 
 body {
   margin: 0;
-  background: $blue;
+  // background: $blue;
 }
 
 
@@ -25,7 +29,7 @@ body {
 
 #splash-info {
   // @include grid-column(6);
-  background-color: red;
+  // background-color: red;
   text-align: center;
   // @include position(relative, 0 auto auto 0);
   // margin: 0 auto 0 auto;
@@ -34,7 +38,7 @@ body {
 }
 
 #bio {
-  background: $ltgray;
+  // background: $ltgray;
   @include grid-column(12);
 }
 
@@ -46,7 +50,7 @@ body {
 }
 
 .projects {
-  background: $ltgray;
+  // background: $ltgray;
   @include grid-column(12);
 }
 
