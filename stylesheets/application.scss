@@ -1,10 +1,5 @@
-$visual-grid: true;
-$visual-grid-color: blue;
-$visual-grid-opacity: .5;
-
 @import 'bourbon/bourbon';
 @import 'neat/neat';
-// @import 'main.scss';
 
 $neat-grid: (
   columns: 12,
@@ -16,16 +11,16 @@ $ltgray: #efefef;
 
 body {
   margin: 0;
-  // background: $blue;
+  @include grid-visual;
 }
 
 
 #splash {
   background: url('../images/splash.jpg');
-  // @include outer-container;
   @include grid-column(12);
   height: 100vh;
 }
+
 
 #splash-info {
   // @include grid-column(6);
